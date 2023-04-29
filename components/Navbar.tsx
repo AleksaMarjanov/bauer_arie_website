@@ -18,7 +18,7 @@ const Navbar = () => {
         return (
             <Link href={href} className={`${className} relative group`}  >
                 {title}
-                < span className={`h-[1px] inline-block  bg-black absolute left-0 -bottom-0.5
+                < span className={`h-[1px] inline-block  bg-dark absolute left-0 -bottom-0.5
                 group-hover:w-full transition-[width] ease duration-300
                 ${pathname === href ? 'w-full' : 'w-0'}`}>&nbsp;</span >
             </Link >
@@ -31,6 +31,7 @@ const Navbar = () => {
                 <CustomLink href="/" title='Home' className="mr-4" />
                 <CustomLink href="/newPatients" title='New Patients' className="mx-4" />
                 <CustomLink href="/ourPractice" title='Our Pratice' className="mx-4" />
+                <CustomLink href="/services" title='Services' className="mx-4" />
                 <CustomLink href="/contact" title='Contact' className="mr-4" />
             </nav>
         </header>
