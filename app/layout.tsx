@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={` ${montserrat.className} min-h-screen`}>
+            <body className={` ${montserrat.className} bg-white  min-h-screen`}>
                 <Navbar />
                 {children}
                 <Footer />

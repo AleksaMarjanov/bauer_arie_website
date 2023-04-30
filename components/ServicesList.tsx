@@ -27,7 +27,7 @@ const ServicesList = () => {
 
 
     return (
-        <main className='flex flex-col items-center justify-center'>
+        <main className='flex flex-col items-center justify-center mt-12 '>
             <h2 className="text-2xl text-teal-600">These are our Services</h2>
             <div className="grid lg:grid-cols-4">
                 {services?.map((service: Services) => (
