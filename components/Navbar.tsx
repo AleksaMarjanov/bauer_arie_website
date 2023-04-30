@@ -31,7 +31,7 @@ const Navbar = () => {
 
     // change background for navigation bar when scrolling
     const changeBackground = () => {
-        if (window.scrollY >= 50) {
+        if (window.scrollY >= 10) {
             setNavbar(true)
         }
         else {
@@ -48,8 +48,8 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className={`${navbar ? 'fixed bg-white drop-shadow-xl py-0' : 'bg-transparent'} sm:px-16 py-6 w-full grid lg:grid-cols-2  items-center justify-center z-[30] `}>
-                <nav className={`lg:flex hidden items-center justify-start ${navbar ? 'text-[16px] transition-all duration-200 ease-in-out' : 'text-lg'} font-medium`}>
+            <div className={`${navbar ? 'bg-white transition-all duration-200 ease-out drop-shadow-xl ' : 'bg-transparent'} fixed sm:px-16 py-6 w-full grid lg:grid-cols-2  items-center justify-center z-[30] `}>
+                <nav className={`lg:flex hidden items-center justify-start ${navbar ? 'text-[17px] transition-all duration-200 ease-in-out' : 'text-lg'} font-medium`}>
                     < CustomLink href="/" title='Home' className="mr-4" />
                     <CustomLink href="/newPatients" title='New Patients' className="mx-4" />
                     <CustomLink href="/ourPractice" title='Our Pratice' className="mx-4" />
@@ -57,7 +57,7 @@ const Navbar = () => {
                     <CustomLink href="/contact" title='Contact' className="mr-4" />
                 </nav>
                 <Link href='/'>
-                    <div className={`${navbar ? 'w-[180px] transition-all duration-200 ease-out' : 'w-[200px] h-[50px]'} relative object-contain flex items-center justify-center object-center z-[0]`}>
+                    <div className={`${navbar ? 'w-[190px] transition-all duration-200 ease-in-out' : 'w-[200px] h-[50px]'} relative object-contain flex items-center justify-center object-center z-[0]`}>
                         <Image
                             src="/logoNoBg.png"
                             alt="logo"

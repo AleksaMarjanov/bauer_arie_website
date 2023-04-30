@@ -22,7 +22,6 @@ const ServicesList = () => {
     useEffect(() => {
         fetchServices();
     }, [])
-
     console.log({ services });
 
 

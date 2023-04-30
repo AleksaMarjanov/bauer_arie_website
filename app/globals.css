@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    color: white;
-    background: #202731;
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,10 +19,31 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+    margin: 0;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 138px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
 }
