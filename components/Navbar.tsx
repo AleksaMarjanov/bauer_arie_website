@@ -48,7 +48,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className={`${navbar ? 'bg-secondary-white text-white transition-all duration-200 ease-out drop-shadow-xl ' : 'bg-transparent'} fixed sm:px-16 py-6 w-full grid lg:grid-cols-2  items-center justify-center z-[30] `}>
+            <div className={`${navbar ? 'bg-secondary-white text-white transition-all duration-200 ease-out drop-shadow-xl ' : 'bg-white'} fixed sm:px-16 py-6 w-full grid lg:grid-cols-2  items-center justify-center z-[999] `}>
                 <nav className={`lg:flex hidden items-center justify-start ${navbar ? 'text-[17px] transition-all duration-200 ease-in-out' : 'text-lg'} font-medium`}>
                     < CustomLink href="/" title='Home' className="mr-4" />
                     <CustomLink href="/newPatients" title='New Patients' className="mx-4" />
