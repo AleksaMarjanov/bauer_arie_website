@@ -47,3 +47,43 @@ body {
 .wave .shape-fill {
     fill: #FFFFFF;
 }
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(196% + 1.3px);
+    height: 269px;
+}
+
+.wave2 .shape-fill {
+    fill: #FFFFFF;
+}
+.wave3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(206% + 1.3px);
+    height: 150px;
+}
+
+.wave3 .shape-fill {
+    fill: #FFFFFF;
+}
