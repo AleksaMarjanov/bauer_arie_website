@@ -3,7 +3,8 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <main>
+        <main className='min-h-screen py-12'>
+            <h1>Services:</h1>
             <ServicesList />
 
         </main>

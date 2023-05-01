@@ -43,7 +43,7 @@ async function Service({ params: { slug } }: Props) {
 
     return (
         <>
-            <article className="h-screen mt-6 md:mt-16 text-center">
+            <article className="min-h-screen py-36 text-center">
                 <h1 className="font-bold text-3xl md:text-6xl my-6">{service.title}</h1>
                 <div className="p-6 lg:p-32">
                     <PortableText value={service.body} components={RichTextComponents} />
