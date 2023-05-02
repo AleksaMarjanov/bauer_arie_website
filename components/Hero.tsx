@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer, textVariant } from '@/utils/motion'
 
 const Hero = () => {
     return (
-        <section className="w-full relative flex justify-center sm:px-16 xl:px-36 min-h-screen sm:min-h-[85vh] md:min-h-[85vh] bg-[#aec2bc]">
+        <section className="w-full relative flex justify-center sm:px-16 xl:px-36 min-h-screen bg-[#aec2bc]">
             {/* <div className="wave-hero"> */}
             {/*     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> */}
             {/*         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path> </svg> */}
@@ -28,7 +28,7 @@ const Hero = () => {
                 <div className="flex items-start space-y-6 md:space-y-8 justify-center px-6 md:px-12 flex-col lg:order-2">
                     <motion.div
                         variants={textVariant(0.1)}
-                        className='text-[#00626f] text-lg sm:text-xl md:text-2xl font-semibold '
+                        className='text-[#00626f] text-sm md:text-md md:text-xl font-semibold '
                     >
                         Arie Bauer D.D.S.
                     </motion.div>
@@ -37,7 +37,7 @@ const Hero = () => {
                         className="text-[#00626f] text-xl sm:text-3xl lg:text-7xl font-semibold">Smile with Confidence</motion.h1>
                     <motion.p
                         variants={textVariant(0.3)}
-                        className="font-semibold text-[#00626f] text-xl sm:text-2xl lg::text-3xl">
+                        className="font-semibold text-[#00626f] text-xl sm:text-2xl lg:text-3xl">
                         Your Partner in Dental Health
                     </motion.p>
                     <motion.div
@@ -63,7 +63,7 @@ const Hero = () => {
                 <motion.div
                     variants={fadeIn('left', 'tween', 0.1, 0.6)}
                     className="relative z-[0] lg:order-1 
-                    max-[375px]:w-[280px] w-[420px] h-[420px] md:w-[520px] md:h-[620px] lg:w-[685px]">
+                    max-[375px]:w-[280px] w-[420px] h-[420px] lg:w-[670px]">
                     <Image
                         src="/heroImag2Ver.png"
                         alt="heroImage"
