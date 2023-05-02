@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between py-12 md:py-36">
+        <main className="flex min-h-screen flex-col items-center justify-between py-16 md:py-18 lg:py-24">
             <Hero />
             {/* <div className="relative mt-16"> */}
             {/*     <Image */}

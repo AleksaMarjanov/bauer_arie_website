@@ -48,7 +48,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed sm:px-16 py-12 w-full grid lg:grid-cols-2  items-center justify-center z-[999] `}>
+            <div className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed sm:px-16 w-full grid lg:grid-cols-2  items-center justify-center z-[999] `}>
                 <nav className={`lg:flex hidden items-center justify-start ${navbar ? 'text-[17px] transition-all duration-200 ease-in-out' : 'text-lg'} font-medium`}>
                     < CustomLink href="/" title='Home' className="mr-4" />
                     <CustomLink href="/newPatients" title='New Patients' className="mx-4" />
@@ -57,7 +57,7 @@ const Navbar = () => {
                     <CustomLink href="/contact" title='Contact' className="mr-4" />
                 </nav>
                 <Link href='/'>
-                    <div className={`${navbar ? 'w-[190px] transition-all duration-200 ease-in-out' : 'w-[200px] h-[50px]'} relative object-contain flex items-center justify-center object-center z-[0]`}>
+                    <div className={`${navbar ? 'w-[110px] h-[40px] transition-all duration-200 ease-in-out' : 'w-[120px] h-[50px]'} relative object-contain flex items-center justify-center object-center z-[0]`}>
                         <Image
                             src="/logoNoBg.png"
                             alt="logo"
