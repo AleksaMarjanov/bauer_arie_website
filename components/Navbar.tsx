@@ -22,7 +22,7 @@ const Navbar = () => {
         return (
             <Link href={href} className={`${className} relative group`}  >
                 {title}
-                < span className={`h-[1px] inline-block  bg-black absolute left-0 -bottom-0.5
+                < span className={`h-[2px] inline-block  bg-[#00626f] absolute left-0 -bottom-0.5
                 group-hover:w-full transition-[width] ease duration-200
                 ${pathname === href ? 'w-full' : 'w-0'}`}>&nbsp;</span >
             </Link >
@@ -31,7 +31,7 @@ const Navbar = () => {
 
     // change background for navigation bar when scrolling
     const changeBackground = () => {
-        if (window.scrollY >= 10) {
+        if (window.scrollY >= 200) {
             setNavbar(true)
         }
         else {
@@ -48,7 +48,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className={`${navbar ? 'bg-secondary-white text-white transition-all duration-200 ease-out drop-shadow-xl ' : 'bg-white'} fixed sm:px-16 py-6 w-full grid lg:grid-cols-2  items-center justify-center z-[999] `}>
+            <div className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed sm:px-16 py-12 w-full grid lg:grid-cols-2  items-center justify-center z-[999] `}>
                 <nav className={`lg:flex hidden items-center justify-start ${navbar ? 'text-[17px] transition-all duration-200 ease-in-out' : 'text-lg'} font-medium`}>
                     < CustomLink href="/" title='Home' className="mr-4" />
                     <CustomLink href="/newPatients" title='New Patients' className="mx-4" />
