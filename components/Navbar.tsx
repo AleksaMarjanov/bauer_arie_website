@@ -103,8 +103,13 @@ const Navbar = () => {
                     <CustomLink href="/contact" title='Contact' className="mr-4" />
                 </nav>
             </div>
-            <Link href='/'>
-                <div className={`${navbar ? 'w-[110px] h-[40px] transition-all duration-200 ease-in-out' : 'w-[120px] h-[50px]'} relative object-contain flex items-center justify-center object-center z-[0]`}>
+            {/* </div> */}
+            {isOpen && (
+                <div></div>
+            )}
+
+            <Link href='/' className="">
+                <div className={`${navbar ? 'w-[110px] h-[40px] transition-all duration-200 ease-in-out' : 'w-[120px] h-[50px]'} absolute left-[50%] top-0 translate-x-[-50%] md:top-2 lg:left-[70%] xl:left-[50%]`}>
                     <Image
                         src="/logoNoBg.png"
                         alt="logo"
@@ -115,11 +120,6 @@ const Navbar = () => {
                     />
                 </div>
             </Link>
-            {/* </div> */}
-            {isOpen && (
-                <div></div>
-            )}
-
         </header >
     )
 }
