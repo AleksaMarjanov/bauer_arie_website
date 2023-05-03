@@ -1,10 +1,12 @@
 'use client';
 
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
+import { mobileVariants } from '@/utils/motion';
 
 type customLinkProps = {
     href: string,
@@ -23,6 +25,7 @@ type MobLinkProps = {
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [navbar, setNavbar] = useState(false);
+    const btnRef = useRef<HTMLButtonElement>(null)
 
     // Navbar component
     const CustomLink = ({ href, title, className }: customLinkProps) => {
@@ -82,13 +85,29 @@ const Navbar = () => {
         window.addEventListener("scroll", changeBackground)
     }, [])
 
+    // if clicked outside of navbar exit navbar
+    useEffect(() => {
+        if (!isOpen) return;
+
+        const closeMenu = (e: any) => {
+            if (btnRef.current && !btnRef.current.contains(e.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("click", closeMenu)
+
+        // cleanup
+        return () => document.removeEventListener("click", closeMenu)
+    }, [isOpen])
+
     return (
         // <header>
-        <header className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed sm:px-16 w-full items-center justify-between z-[999] flex px-6 py-8 font-medium `
+        <header className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed w-full items-center justify-between z-[999] flex lg:px-16 py-8 font-medium `
         }>
             {/* <div className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed sm:px-16 w-full grid lg:grid-cols-2  items-center justify-between z-[999] `}> */}
             {/* Hamburger menu */}
-            <button className='flex lg:hidden flex-col items-center justify-center' onClick={handleToggle}>
+            <button className='px-3 flex lg:hidden flex-col items-center justify-center' onClick={handleToggle}>
                 <span className={`bg-black dark:bg-light block h-0.5 w-6 transition-all duration-300 ease-out rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-black dark:bg-light block h-0.5 w-6 transition-all duration-300 ease-out rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-black dark:bg-light block h-0.5 w-6 transition-all duration-300 ease-out rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -105,9 +124,24 @@ const Navbar = () => {
             </div>
             {/* </div> */}
             {isOpen && (
-                <div></div>
-            )}
+                <motion.nav
+                    ref={btnRef}
+                    initial="hidden"
+                    variants={mobileVariants}
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    className="w-full lg:hidden fixed top-[7%] bottom-0 left-0 h-screen flex flex-col items-center justify-center text-black bg-white text-3xl font-semibold">
+                    <CustomMobileLink href="/" title='Home' className="" toggle={handleToggle} />
+                    <CustomMobileLink href="/newPatients" title='New Patients' className="" toggle={handleToggle} />
+                    <CustomMobileLink href="/ourPractice" title='Our Practice' className="" toggle={handleToggle} />
+                    <CustomMobileLink href="/services" title='Services' className="" toggle={handleToggle} />
+                    <CustomMobileLink href="/" title='Contact' className="" toggle={handleToggle} />
+                </motion.nav>
+            )
+            }
 
+
+            {/*  logo */}
             <Link href='/' className="">
                 <div className={`${navbar ? 'w-[110px] h-[40px] transition-all duration-200 ease-in-out' : 'w-[120px] h-[50px]'} absolute left-[50%] top-0 translate-x-[-50%] md:top-2 lg:left-[70%] xl:left-[50%]`}>
                     <Image
