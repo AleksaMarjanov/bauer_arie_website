@@ -130,8 +130,7 @@ const Navbar = () => {
                     variants={mobileVariants}
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="w-full lg:hidden fixed top-[7%] bottom-0 left-0 h-screen flex flex-col items-center justify-center text-black bg-white text-3xl font-semibold">
-                    <CustomMobileLink href="/" title='Home' className="" toggle={handleToggle} />
+                    className="w-full lg:hidden fixed top-[7%] bottom-10 left-0 h-screen flex flex-col justify-center text-black bg-white text-4xl font-semibold"> <CustomMobileLink href="/" title='Home' className="" toggle={handleToggle} />
                     <CustomMobileLink href="/newPatients" title='New Patients' className="" toggle={handleToggle} />
                     <CustomMobileLink href="/ourPractice" title='Our Practice' className="" toggle={handleToggle} />
                     <CustomMobileLink href="/services" title='Services' className="" toggle={handleToggle} />
