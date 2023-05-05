@@ -27,8 +27,8 @@ const LandingPageList = () => {
                     A little nervous about your visit? No problem! We take extra pride in treating patients who are “dental-phobic” or who haven’t seen the dentist in years. There’s no judgment, just a friendly approach to family dental care you won’t find anywhere else.
                 </p>
                 <Link href="service/dentures">
-                    <button className="mt-2 md:mt-6 py-2 md:py-3 px-3 md:px-6 text-white bg-[#00626f] 
-                            hover:border-white hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
+                    <button className="mt-2 md:mt-6 py-2 md:py-3 px-3 md:px-6 text-white 
+                            hover:border-white bg-white/50 hover:bg-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
                             transition-all duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
                         Schedule an Appointment
                     </button>

@@ -53,12 +53,12 @@ const Navbar = () => {
 
         return (
             // @ts-ignore
-            < button href={href} className={`${className} relative group my-2`
+            < button href={href} className={`${className} relative text-[#00626f] group my-2`
             } onClick={handleClick} >
                 {title}
-                < span className={`h-[1px] inline-block  bg-light absolute left-0 bottom-0 -bottom-0.5
-                group-hover:w-full transition-[width] ease duration-300
-                ${pathname === href ? 'w-full' : 'w-0'}`}>&nbsp;</span >
+                < span className={`h-[1px] inline-block items-center justify-center bg-[#00626f] absolute left-[20%] -bottom-0.5
+                group-hover:w-[50%] transition-[width] ease duration-300
+                ${pathname === href ? 'w-[50%]' : 'w-0'}`}>&nbsp;</span >
 
             </button >
         )
@@ -129,11 +129,12 @@ const Navbar = () => {
                     variants={mobileVariants}
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="w-full lg:hidden fixed top-[7%] bottom-10 left-0 h-screen flex flex-col justify-center text-black bg-white text-4xl font-semibold"> <CustomMobileLink href="/" title='Home' className="" toggle={handleToggle} />
+                    className="w-full lg:hidden fixed top-[7%] bottom-30 left-0 h-screen flex flex-col text-black bg-white text-4xl font-semibold">
+                    <CustomMobileLink href="/" title='Home' className="mt-48" toggle={handleToggle} />
                     <CustomMobileLink href="/newPatients" title='New Patients' className="" toggle={handleToggle} />
                     <CustomMobileLink href="/ourPractice" title='Our Practice' className="" toggle={handleToggle} />
                     <CustomMobileLink href="/services" title='Services' className="" toggle={handleToggle} />
-                    <CustomMobileLink href="/" title='Contact' className="" toggle={handleToggle} />
+                    <CustomMobileLink href="/contact" title='Contact' className="" toggle={handleToggle} />
                 </motion.nav>
             )
             }
