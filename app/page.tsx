@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center py-16 md:py-18 lg:py-24">
+        <main className="flex min-h-screen flex-col items-center justify-center py-24 md:py-18 lg:py-24">
             <Hero />
             <div className="mt-4 md:mt-32 flex items-center justify-center  flex-col space-y-6 md:space-y-12">
                 <p className="px-4 md:px-36 flex items-center justify-center font-medium text-lg text-[#00626f]">Welcome to Williston Family Dentistry, a trusted provider of top-notch dental care for families. Our experienced team of professionals, led by Dr. Arie Bauer, is dedicated to delivering exceptional dental services that prioritize your health and satisfaction.<br />
