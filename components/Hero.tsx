@@ -63,13 +63,13 @@ const Hero = () => {
                 <motion.div
                     variants={fadeIn('right', 'tween', 0.1, 0.6)}
                     className="relative z-[0] lg:order-1 
-                    max-[475px]:w-[320px] w-[420px] h-[420px] lg:w-[670px] xl:w-[820px]">
+                    max-[475px]:w-[320px] w-[420px] h-[420px] lg:w-[670px] xl:w-[720px] 2xl:w-[820px]">
                     <Image
                         src="/heroImag2Ver.png"
                         alt="heroImage"
                         width={1000}
                         height={1000}
-                        className='object-contain lg:object-center rounded-bl-[120px] rounded-br-[102px]'
+                        className='object-contain lg:object-center rounded-bl-[360px] rounded-br-[102px] rounded-[5px]'
                         priority
                     />
                 </motion.div>
