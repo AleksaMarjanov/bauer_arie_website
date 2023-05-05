@@ -56,7 +56,7 @@ const Navbar = () => {
             < button href={href} className={`${className} relative text-[#00626f] group my-2`
             } onClick={handleClick} >
                 {title}
-                < span className={`h-[1px] inline-block items-center justify-center bg-[#00626f] absolute left-[20%] -bottom-0.5
+                < span className={`h-[1px] inline-block bg-[#00626f] absolute left-[25%] -bottom-0.5
                 group-hover:w-[50%] transition-[width] ease duration-300
                 ${pathname === href ? 'w-[50%]' : 'w-0'}`}>&nbsp;</span >
 
