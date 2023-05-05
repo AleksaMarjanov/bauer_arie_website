@@ -27,7 +27,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full flex md:max-h-[700px] flex-col mx-auto items-center justify-center text-sm md:text-2xl font-semibold p-4 md:p-16 bg-[#00626f] text-white">
-                    <h1 className="font-bold text-4xl">Family Dentistry</h1>
+                    <h1 className="font-bold text-2xl">Family Dentistry</h1>
                     <p className="py-12">All the care your family needs — all under one roof. From your infant’s first dental exam to teeth whitening before your wedding day, you’ll be glad Bowles Dental is where you chose to call home for your whole family’s dental health needs.
                         Your treatment is tailored to you, nothing is cookie-cutter or one-size-fits-all.
                     </p>
