@@ -107,7 +107,7 @@ const LandingPageList = () => {
                 <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
                     <Image
                         src='/crown.jpg'
-                        alt="Crowns"
+                        alt="Crown process being shown on computer by doctor"
                         fill
                         className='object-cover object-center'
                         priority
@@ -120,7 +120,7 @@ const LandingPageList = () => {
                 <div className="relative w-full h-[300px] md:h-[600px] ">
                     <Image
                         src='/veneers.jpg'
-                        alt="Veneers"
+                        alt="Beautiful girl with white Veneers"
                         fill
                         className='object-cover object-center'
                         priority
@@ -147,7 +147,6 @@ const LandingPageList = () => {
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
                     <h2 className="font-semibold text-xl md:text-4xl lg:text-4xl">Implants</h2>
                     <p className="font-medium text-lg md:text-xl lg:text-xl">
-                        You can get a natural tooth-colored crown in just one appointment. No goopy impressions, no finicky temporary crown, and no need for a trip back to the dentist.
                     </p>
                     <Link href="/service/implants">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
@@ -161,7 +160,7 @@ const LandingPageList = () => {
                 <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
                     <Image
                         src='/implant.jpg'
-                        alt="Crowns"
+                        alt="Guy with implants"
                         fill
                         className='object-cover object-center'
                         priority
