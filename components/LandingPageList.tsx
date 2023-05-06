@@ -132,7 +132,7 @@ const LandingPageList = () => {
                     <p className="font-medium text-lg md:text-xl lg:text-xl">
                         These types of prosthetics are necessary depending on the amount of compromised tooth structure. If you have a damaged or decayed tooth, we can help you choose the best solution.
                     </p>
-                    <Link href="/service/crowns-bridges-and-veneers">
+                    <Link href="/service/veneers">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
                             hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
                             transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
@@ -147,6 +147,7 @@ const LandingPageList = () => {
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
                     <h2 className="font-semibold text-xl md:text-4xl lg:text-4xl">Implants</h2>
                     <p className="font-medium text-lg md:text-xl lg:text-xl">
+                        A dental implant mimics the form and function of a natural tooth, which consists of a root and a crown. The crown is the visible part of your tooth.
                     </p>
                     <Link href="/service/implants">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
