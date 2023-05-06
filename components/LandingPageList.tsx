@@ -65,6 +65,61 @@ const LandingPageList = () => {
                 </div>
 
             </div>
+            <div className='w-full mt-6 lg:mt-24 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12 space-y-6 grid grid-cols-1 lg:grid-cols-2'>
+
+                <div className="relative w-full h-[300px] md:h-[600px] ">
+                    <Image
+                        src='/veneers.jpg'
+                        alt="Veneers"
+                        fill
+                        className='object-cover object-center'
+                        priority
+                    />
+                </div>
+
+                <div className='flex flex-col items-center justify-center gap-6  text-[#00626f]'>
+                    <h2 className="font-bold text-xl md:text-2xl lg:text-4xl">Veeners</h2>
+                    <p className="font-medium text-sm md:text-lg lg:text-xl">
+                        You can get a natural tooth-colored crown in just one appointment. No goopy impressions, no finicky temporary crown, and no need for a trip back to the dentist.
+                    </p>
+                    <Link href="/service/crowns-bridges-and-veneers">
+                        <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
+                            hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
+                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
+                            Learn More
+                        </button>
+                    </Link>
+                </div>
+
+            </div>
+            <div className='w-full mt-6 lg:mt-24 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12 space-y-6 grid grid-cols-1 lg:grid-cols-2'>
+
+
+                <div className='flex flex-col items-center justify-center gap-6  text-[#00626f]'>
+                    <h2 className="font-bold text-xl md:text-2xl lg:text-4xl">Implants</h2>
+                    <p className="font-medium text-sm md:text-lg lg:text-xl">
+                        A dental implant mimics the form and function of a natural tooth, which consists of a root and a crown. The crown is the visible part of your tooth.
+                    </p>
+                    <Link href="/service/implants">
+                        <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
+                            hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
+                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
+                            Learn More
+                        </button>
+                    </Link>
+                </div>
+
+                <div className="relative w-full h-[300px] md:h-[600px] ">
+                    <Image
+                        src='/implant.jpg'
+                        alt="Crowns"
+                        fill
+                        className='object-cover object-center'
+                        priority
+                    />
+                </div>
+
+            </div>
 
         </article>
     )
