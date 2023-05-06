@@ -91,14 +91,14 @@ const LandingPageList = () => {
             <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
-                    <h2 className="font-semibold text-xl md:text-4xl lg:text-4xl">Crowns</h2>
-                    <p className="font-medium text-lg md:text-xl lg:text-xl">
+                    <h2 className="font-semibold text-4xl ">Crowns</h2>
+                    <p className="font-medium text-xl">
                         You can get a natural tooth-colored crown in just one appointment. No goopy impressions, no finicky temporary crown, and no need for a trip back to the dentist.
                     </p>
                     <Link href="/service/crowns">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
-                            hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
-                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
+                            hover:border-[#00626f] hover:border-2 font-semibold text-lg
+                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-[2rem]">
                             Learn More
                         </button>
                     </Link>
@@ -128,13 +128,13 @@ const LandingPageList = () => {
                 </div>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f]'>
-                    <h2 className="font-semibold text-xl md:text-4xl lg:text-4xl">Veeners</h2>
-                    <p className="font-medium text-lg md:text-xl lg:text-xl">
+                    <h2 className="font-semibold text-4xl ">Veeners</h2>
+                    <p className="font-medium text-xl ">
                         These types of prosthetics are necessary depending on the amount of compromised tooth structure. If you have a damaged or decayed tooth, we can help you choose the best solution.
                     </p>
                     <Link href="/service/veneers">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
-                            hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
+                            hover:border-[#00626f] hover:border-2 font-semibold text-lg
                             transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
                             Learn More
                         </button>
@@ -145,8 +145,8 @@ const LandingPageList = () => {
             <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
-                    <h2 className="font-semibold text-xl md:text-4xl lg:text-4xl">Implants</h2>
-                    <p className="font-medium text-lg md:text-xl lg:text-xl">
+                    <h2 className="font-semibold text-4xl">Implants</h2>
+                    <p className="font-medium text-xl">
                         A dental implant mimics the form and function of a natural tooth, which consists of a root and a crown. The crown is the visible part of your tooth.
                     </p>
                     <Link href="/service/implants">
