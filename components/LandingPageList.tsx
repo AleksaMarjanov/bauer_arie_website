@@ -95,7 +95,7 @@ const LandingPageList = () => {
                     <p className="font-medium text-lg md:text-xl lg:text-xl">
                         You can get a natural tooth-colored crown in just one appointment. No goopy impressions, no finicky temporary crown, and no need for a trip back to the dentist.
                     </p>
-                    <Link href="/service/crowns-bridges-and-veneers">
+                    <Link href="/service/crowns">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
                             hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
                             transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
