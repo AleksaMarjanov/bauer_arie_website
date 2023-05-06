@@ -35,13 +35,16 @@ const LandingPageList = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                     className="relative bg-gray-200 w-full h-full max-[475px]:py-24 max-[475px]:px-12">
-                    <Image
-                        src="/kid1.jpg"
-                        alt="infant"
-                        fill
-                        className='object-contain object-center'
-                        priority
-                    />
+                    <Link href="/newPatients">
+
+                        <Image
+                            src="/kid1.jpg"
+                            alt="infant"
+                            fill
+                            className='object-contain object-center'
+                            priority
+                        />
+                    </Link>
                 </motion.div>
 
                 <motion.div
@@ -105,26 +108,30 @@ const LandingPageList = () => {
                 </div>
 
                 <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
-                    <Image
-                        src='/crown.jpg'
-                        alt="Crown process being shown on computer by doctor"
-                        fill
-                        className='object-cover object-center'
-                        priority
-                    />
+                    <Link href="/service/crowns">
+                        <Image
+                            src='/crown.jpg'
+                            alt="Crown process being shown on computer by doctor"
+                            fill
+                            className='object-cover object-center'
+                            priority
+                        />
+                    </Link>
                 </div>
 
             </div>
             <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className="relative w-full h-[300px] md:h-[600px] ">
-                    <Image
-                        src='/veneers.jpg'
-                        alt="Beautiful girl with white Veneers"
-                        fill
-                        className='object-cover object-center'
-                        priority
-                    />
+                    <Link href="/service/veneers">
+                        <Image
+                            src='/veneers.jpg'
+                            alt="Beautiful girl with white Veneers"
+                            fill
+                            className='object-cover object-center'
+                            priority
+                        />
+                    </Link>
                 </div>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f]'>
@@ -159,13 +166,15 @@ const LandingPageList = () => {
                 </div>
 
                 <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
-                    <Image
-                        src='/implant.jpg'
-                        alt="Guy with implants"
-                        fill
-                        className='object-cover object-center'
-                        priority
-                    />
+                    <Link href="serivce/implants">
+                        <Image
+                            src='/implant.jpg'
+                            alt="Guy with implants"
+                            fill
+                            className='object-cover object-center'
+                            priority
+                        />
+                    </Link>
                 </div>
 
             </div>
