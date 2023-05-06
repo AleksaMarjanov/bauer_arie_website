@@ -20,12 +20,12 @@ const LandingPageList = () => {
                     variants={textVariant(0.3)}
                     className="px-4 leading-[30px] md:px-36 flex items-center justify-center font-medium text-lg text-[#00626f]">Welcome to Williston Family Dentistry, a trusted provider of top-notch dental care for families. Our experienced team of professionals, led by Dr. Arie Bauer, is dedicated to delivering exceptional dental services that prioritize your health and satisfaction.<br />
                 </motion.p>
-
-                <motion.p
-                    variants={textVariant(0.5)}
-                    className="px-4 leading-[30px] md:px-36 flex items-center justify-center font-medium text-lg text-[#00626f]"> Our modern and welcoming office is designed to ensure your comfort and peace of mind, from the moment you step through our doors. Our goal is to exceed your expectations by providing personalized, compassionate, and high-quality dental care that meets your unique needs.
-                    Thank you for choosing Williston Family Dentistry. We look forward to serving you and your family for all of your dental needs.
-                </motion.p>
+                {/**/}
+                {/* <motion.p */}
+                {/*     variants={textVariant(0.5)} */}
+                {/*     className="px-4 leading-[30px] md:px-36 flex items-center justify-center font-medium text-lg text-[#00626f]"> Our modern and welcoming office is designed to ensure your comfort and peace of mind, from the moment you step through our doors. Our goal is to exceed your expectations by providing personalized, compassionate, and high-quality dental care that meets your unique needs. */}
+                {/*     Thank you for choosing Williston Family Dentistry. We look forward to serving you and your family for all of your dental needs. */}
+                {/* </motion.p> */}
             </motion.div>
 
             <div className="mt-4 lg:mt-32 w-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 items-center justify-center ">
