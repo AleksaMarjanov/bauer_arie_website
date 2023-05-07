@@ -5,7 +5,7 @@ import office from '../../public/outsideOffice.jpg'
 const OurPractice = () => {
     return (
         <div className="w-full ">
-            <HeroServices title="Meet Our Team" message="Meet our Team" src={office} />
+            <HeroServices heading="Meet Our Team" message="Meet our Team" src={office} />
         </div >
     )
 }
