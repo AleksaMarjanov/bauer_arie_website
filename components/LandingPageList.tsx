@@ -60,7 +60,9 @@ const LandingPageList = () => {
                         <motion.p
                             variants={textVariant(0.4)}
                             className="py-6">
-                            All the care your family needs — all under one roof. From your infant’s first dental exam to teeth whitening before your wedding day, you’ll be glad Bowles Dental is where you chose to call home for your whole family’s dental health needs.
+                            All the care your family needs — all under one roof.
+                            From your infant’s first dental exam to teeth whitening before your wedding day, you’ll be glad Wiliston Dentistry
+                            is where you chose to call home for your whole family’s dental health needs.
                         </motion.p>
                         <motion.p
                             variants={textVariant(0.6)}

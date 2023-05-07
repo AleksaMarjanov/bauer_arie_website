@@ -1,5 +1,7 @@
+import { HeroServices } from '@/components';
 import { RichTextComponents } from '@/components/RichTextComponent';
 import { client } from '@/lib/sanity.client';
+import { urlFor } from '@/lib/urlFor';
 import { Services } from '@/typings';
 import { PortableText } from '@portabletext/react';
 import { groq } from 'next-sanity';
@@ -43,6 +45,11 @@ async function Service({ params: { slug } }: Props) {
 
     return (
         <>
+            <HeroServices
+                message={service.title}
+                heading={service.title}
+                src={urlFor(service.mainImage).url()}
+            />
             <article className="min-h-screen py-36 text-center">
                 <h1 className="font-bold text-3xl md:text-6xl my-6">{service.title}</h1>
                 <div className="p-6 lg:p-32">
