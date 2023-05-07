@@ -1,13 +1,13 @@
 "use client";
 
 import { staggerContainer, textVariant } from '@/utils/motion'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 
 type HeroProps = {
-    src: string,
+    src: string | StaticImageData
     heading: string,
     message: string,
 }
@@ -15,7 +15,7 @@ type HeroProps = {
 const HeroServices = ({ src, heading, message }: HeroProps) => {
     return (
         <div className="relative h-[95vh] flex items-start justify-start bg-fixed bg-cover w-full object-cover">
-            <Image src={src} alt="hero" fill className="w-full object-cover object-center" priority />
+            <Image src={src} alt="hero" fill className="w-full fixed object-cover object-center" priority />
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2]" />
             <motion.div
                 variants={staggerContainer}
