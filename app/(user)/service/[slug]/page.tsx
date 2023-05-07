@@ -46,14 +46,14 @@ async function Service({ params: { slug } }: Props) {
     return (
         <>
             <HeroServices
-                message={service.headingMessage}
-                heading={service.headingHero}
-                src={urlFor(service.mainImage).url()}
+                message={service?.headingMessage}
+                heading={service?.headingHero}
+                src={urlFor(service?.mainImage).url()}
             />
             <article className="min-h-screen py-36 text-center">
-                <h1 className="font-bold text-3xl md:text-6xl my-6">{service.title}</h1>
+                <h1 className="font-bold text-3xl md:text-6xl my-6">{service?.title}</h1>
                 <div className="p-6 lg:p-32">
-                    <PortableText value={service.body} components={RichTextComponents} />
+                    <PortableText value={service?.body} components={RichTextComponents} />
                 </div>
             </article>
         </>
