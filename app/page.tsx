@@ -1,4 +1,4 @@
-import { Hero, LandingPageList, ServicesList } from '@/components'
+import { Hero, LandingPageList, OurOffice, ServicesList } from '@/components'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,6 +9,7 @@ export default function Home() {
             <Hero />
             <LandingPageList />
             <ServicesList />
+            <OurOffice />
         </main >
     )
 }

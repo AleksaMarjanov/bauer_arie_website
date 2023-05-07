@@ -144,7 +144,7 @@ const LandingPageList = () => {
                     <Link href="/service/veneers">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
                             hover:border-[#00626f] hover:border-2 font-semibold text-lg
-                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl border-gray-600">
+                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-[2rem] ">
                             Learn More
                         </button>
                     </Link>
@@ -161,7 +161,7 @@ const LandingPageList = () => {
                     <Link href="/service/implants">
                         <button className="py-2 md:py-3 px-8 md:px-8 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
                             hover:border-[#00626f] hover:border-2 font-semibold text-sm sm:text-sm md:text-lg
-                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-xl">
+                            transition-all capitilize duration-700 ease-in-out cursor-pointer rounded-[2rem]">
                             Learn More
                         </button>
                     </Link>
