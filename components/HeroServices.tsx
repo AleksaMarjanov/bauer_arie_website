@@ -32,11 +32,11 @@ const HeroServices = ({ src, heading, message }: HeroProps) => {
                 <motion.div
                     variants={textVariant(0.3)}
                 >
-                    <p className="py-5 font-medium text-3xl">{message}</p>
+                    <p className="py-5 mt-4 font-medium text-3xl">{message}</p>
                 </motion.div>
                 <motion.div
                     variants={textVariant(0.5)}
-                    className="flex flex-col gap-y-6 md:flex-row md:gap-x-6 items-start justify-start "
+                    className="mt-4 flex flex-col gap-y-6 md:flex-row md:gap-x-6 items-start justify-start "
                 >
                     <Link href="/newPatients">
                         <motion.button
