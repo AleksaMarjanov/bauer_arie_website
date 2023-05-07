@@ -13,6 +13,8 @@ interface Services extends Base {
     mainImage: Image;
     slug: Slug;
     title: string;
+    headingHero: string;
+    headingMessage: string;
     description: string;
 }
 

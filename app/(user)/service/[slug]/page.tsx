@@ -46,8 +46,8 @@ async function Service({ params: { slug } }: Props) {
     return (
         <>
             <HeroServices
-                message={service.title}
-                heading={service.title}
+                message={service.headingMessage}
+                heading={service.headingHero}
                 src={urlFor(service.mainImage).url()}
             />
             <article className="min-h-screen py-36 text-center">

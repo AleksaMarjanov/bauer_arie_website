@@ -11,6 +11,16 @@ export default defineType({
             type: 'string',
         }),
         defineField({
+            name: 'headingHero',
+            title: 'Heading Hero',
+            type: 'string',
+        }),
+        defineField({
+            name: 'headingMessage',
+            title: 'Heading Message',
+            type: 'string',
+        }),
+        defineField({
             name: 'slug',
             title: 'Slug',
             type: 'slug',
