@@ -25,10 +25,10 @@ const Footer = () => {
 
 
     return (
-        <footer className="w-full  flex flex-col items-start px-6 md:px-12 justify-between">
-            <div className="w-full grid gap-24 grid-cols-4 md:flex-row items-start justify-center">
+        <footer className="w-full bg-gray-100 border-t-2 border-[#00626f] border-s-fuchsia-50 shadow-2xl flex flex-col items-start px-6 md:px-12 justify-between">
+            <div className="w-full mt-16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 grid gap-24 grid-cols-4 md:flex-row items-start justify-center">
                 <div>
-                    <h2 className="col-span-4 md:col-span-1 text-2xl text-[#00626f] mb-2">Services</h2>
+                    <h2 className="col-span-4 md:col-span-1 text-2xl md:text-4xl text-[#00626f] mb-2">Services</h2>
                     {services.map((service: Services) => (
                         <ClientSideRoute route={`/service/${service.slug.current}`} key={service._id} >
                             <ol>
@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col-span-4 md:col-span-1 flex flex-col gap-2 md:gap-4 text-[#00626f] items-start justify-start">
-                    <h2 className="text-2xl gap-4 mb-2">Practice</h2>
+                    <h2 className="text-2xl gap-4 mb-2 md:text-4xl">Practice</h2>
                     <Link href="/">Home</Link>
                     <Link href="/ourPractice">About</Link>
                     <Link href="/newPatients">New Patients</Link>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col-span-4 md:col-span-1 gap-y-3 md:gap-y-4 flex flex-col text-[#00626f] items-start justify-start">
-                    <h2 className="text-2xl text-[#00626f] mb-2">Office</h2>
+                    <h2 className="text-2xl text-[#00626f] mb-2 md:text-4xl ">Office</h2>
                     <div className="flex items-start justify-start relative flex-row w-full h-full">
                         <a href="tel:701.577.1000">
                             <Image
@@ -83,7 +83,7 @@ const Footer = () => {
                 </div>
 
                 <div className='col-span-4 md:col-span-1'>
-                    <h2 className=" text-2xl text-[#00626f] mb-2">Socials</h2>
+                    <h2 className=" text-2xl md:text-4xl text-[#00626f] mb-2">Socials</h2>
                 </div>
             </div >
 
