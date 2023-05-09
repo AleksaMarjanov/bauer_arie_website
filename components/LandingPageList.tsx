@@ -37,13 +37,19 @@ const LandingPageList = () => {
                     className="relative bg-gray-200 w-full h-full max-[475px]:py-24 max-[475px]:px-12">
                     <Link href="/newPatients">
 
+                        {/* <div className="relative"> */}
                         <Image
                             src="/kid1.jpg"
                             alt="infant"
                             fill
                             className='object-contain object-center'
                             priority
+                            sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw,a
+                                33vw"
+
                         />
+                        {/* </div> */}
                     </Link>
                 </motion.div>
 
@@ -111,28 +117,38 @@ const LandingPageList = () => {
 
                 <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
                     <Link href="/service/crowns">
+                        {/* <div className="relative"> */}
                         <Image
                             src='/crown.jpg'
                             alt="Crown process being shown on computer by doctor"
                             fill
                             className='object-cover object-center'
                             priority
+                            sizes="(max-width: 768px) 100vw,
+                            (max-width: 1200px) 50vw,a
+                            33vw"
                         />
+                        {/* </div> */}
                     </Link>
                 </div>
 
-            </div>
+            </div >
             <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className="relative w-full h-[300px] md:h-[600px] ">
                     <Link href="/service/veneers">
+                        {/* <div className="relative"> */}
                         <Image
                             src='/veneers.jpg'
                             alt="Beautiful girl with white Veneers"
                             fill
                             className='object-cover object-center'
                             priority
+                            sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw,a
+                                33vw"
                         />
+                        {/* </div> */}
                     </Link>
                 </div>
 
@@ -150,7 +166,7 @@ const LandingPageList = () => {
                     </Link>
                 </div>
 
-            </div>
+            </div >
             <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
@@ -169,13 +185,18 @@ const LandingPageList = () => {
 
                 <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
                     <Link href="serivce/implants">
+                        {/* <div className="relative"> */}
                         <Image
                             src='/implant.jpg'
                             alt="Guy with implants"
                             fill
                             className='object-cover object-center'
                             priority
+                            sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw,a
+                                33vw"
                         />
+                        {/* </div> */}
                     </Link>
                 </div>
 

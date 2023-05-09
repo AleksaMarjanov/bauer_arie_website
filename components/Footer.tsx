@@ -25,7 +25,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="w-full bg-gray-100 border-t-2 border-[#00626f] border-s-fuchsia-50 shadow-2xl flex flex-col items-start px-6 md:px-12 justify-between">
+        <footer className="w-full bg-gray-100 border-t-2 border-[#00626f] shadow-2xl flex flex-col items-start px-6 md:px-12 justify-between">
             <div className="w-full mt-16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 grid gap-24 grid-cols-4 md:flex-row items-start justify-center">
                 <div>
                     <h2 className="col-span-4 md:col-span-1 text-2xl md:text-4xl text-[#00626f] mb-2">Services</h2>

@@ -42,7 +42,7 @@ const Hero = () => {
                     </motion.p>
                     <motion.div
                         variants={textVariant(0.4)}
-                        className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center justify-center"
+                        className="flex flex-col xl:flex-row space-y-4 xl:space-y-0 xl:space-x-4 items-center justify-center"
                     >
                         <Link href="/newPatients">
                             <button className="py-2 md:py-3 px-3 md:px-6 text-white bg-[#00626f] hover:text-[#00626f] hover:bg-transparent
