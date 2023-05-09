@@ -8,7 +8,7 @@ const newPatients = () => {
             <HeroServices src={newPatient} heading="New Patient" message="Fill Out Form Below" />
 
             <article className="mt-4 md:mt-16 w-full grid grid-cols-1 md:grid-cols-2 px-4 md:px-36" >
-                <h1 className="text-3xl md:text-5xl font-semibold flex items-start justify-start md:items-center md:justify-center "> You're in great hands</h1>
+                <h1 className="text-3xl md:text-5xl font-semibold flex items-start justify-start md:items-center md:justify-center "> You&apos;re in great hands</h1>
 
                 <span className='text-lg font-medium px-4 md:px-8'>
                     We make sure all our new patients feel welcome, safe, and taken care of.
