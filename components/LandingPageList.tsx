@@ -28,7 +28,7 @@ const LandingPageList = () => {
                 {/* </motion.p> */}
             </motion.div>
 
-            <div className="mt-4 lg:mt-32 w-full grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-2 items-center justify-center ">
+            <div className="mt-4 lg:mt-32 w-full grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-2 items-center justify-center " >
                 <motion.div
                     variants={fadeIn('right', 'spring', 0.4, 0.85)}
                     initial="hidden"
