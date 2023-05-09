@@ -28,7 +28,7 @@ const LandingPageList = () => {
                 {/* </motion.p> */}
             </motion.div>
 
-            <div className="mt-4 lg:mt-32 w-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 items-center justify-center ">
+            <div className="mt-4 lg:mt-32 w-full grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-2 items-center justify-center ">
                 <motion.div
                     variants={fadeIn('right', 'spring', 0.4, 0.85)}
                     initial="hidden"
@@ -58,7 +58,7 @@ const LandingPageList = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="w-full flex leading-[40px] lg:max-h-[700px] flex-col mx-auto items-center justify-center p-4 md:p-16 bg-[#00626f] text-white">
+                    className="w-full flex leading-[40px] flex-col mx-auto items-center justify-center p-4 md:p-16 bg-[#00626f] text-white">
                     <motion.h1
                         variants={textVariant(0.2)}
                         className="font-semibold text-xl md:text-4xl">Family Dentistry</motion.h1>
@@ -183,7 +183,7 @@ const LandingPageList = () => {
                     </Link>
                 </div>
 
-                <div className="relative lg:py-0 w-full h-[300px] md:h-[600px] order-1 lg:order-2">
+                <div className="relative lg:py-0 w-full h-[400px] md:h-[600px] order-1 lg:order-2">
                     <Link href="serivce/implants">
                         {/* <div className="relative"> */}
                         <Image
