@@ -28,16 +28,16 @@ const Hero = () => {
                 <div className="flex items-start space-y-6 md:space-y-8 justify-center px-6 md:px-12 flex-col lg:order-2">
                     <motion.div
                         variants={textVariant(0.1)}
-                        className='text-[#00626f] text-sm md:text-md md:text-xl font-semibold '
+                        className='text-[#00626f] max-[475px]:mt-6 text-sm md:text-md md:text-xl font-semibold '
                     >
                         Arie Bauer D.D.S.
                     </motion.div>
                     <motion.h1
                         variants={textVariant(0.2)}
-                        className="text-[#00626f] text-xl sm:text-3xl lg:text-7xl font-semibold">Smile with Confidence</motion.h1>
+                        className="text-[#00626f] text-2xl sm:text-3xl lg:text-7xl font-semibold">Smile with Confidence</motion.h1>
                     <motion.p
                         variants={textVariant(0.3)}
-                        className="font-semibold text-[#00626f] text-xl sm:text-2xl lg:text-3xl">
+                        className="font-semibold text-[#00626f] text-2xl sm:text-2xl lg:text-3xl">
                         Your Partner in Dental Health
                     </motion.p>
                     <motion.div
