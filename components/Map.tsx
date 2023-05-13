@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 
-const apiKey = process.env.apiKey
+const apiKey = process.env.map
 
 const MapForContact = () => {
 

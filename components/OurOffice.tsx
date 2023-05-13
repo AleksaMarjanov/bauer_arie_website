@@ -16,7 +16,7 @@ const OurOffice = () => {
 
     return (
 
-        <section className='w-full px-4 mt-4 md:mt-16 flex flex-col lg:flex-row md:gap-16 lg:gap-32'>
+        <section className='w-full px-4 mt-4 md:mt-16 flex flex-col lg:flex-row md:gap-16 '>
             <div className='relative w-[400px] h-[350px] md:w-[500px] md:h-[500px]'>
                 <Image src={office} alt="office outside" fill className="object-contain object-center" />
             </div>
@@ -61,7 +61,7 @@ const OurOffice = () => {
                 </div>
 
             </div>
-            <div className="relative z-[0] h-[60vh] max-[425px]:h-[40vh] w-[60%] max-[425px]:w-full max-[425px]:px-2 no-repeat">
+            <div className="relative z-[0] h-[60vh] max-[425px]:h-[40vh] w-[30%] max-[425px]:w-full max-[425px]:px-2 no-repeat">
                 <MapWithNOSSR />
             </div>
         </section >
