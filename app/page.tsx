@@ -8,7 +8,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center justify-center py-24 md:py-18 lg:py-24">
             <Hero />
             <LandingPageList />
-            <ServicesList />
+            {/* <ServicesList /> */}
             <OurOffice />
         </main >
     )
