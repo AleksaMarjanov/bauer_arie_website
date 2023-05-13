@@ -66,16 +66,17 @@ const OurPractice = () => {
                             variants={textVariant(0.4)}
                             className="py-6">
                             Arie was born and raised in North Dakota. He attended Minot State University for Undergrad, then moved to Omaha where he graduated as one  of the top in his class at Creighton University School of Dentistry.  After practicing for a year in the small town of Glenwood, Iowa, it was time to move closer to home.
+
                         </motion.p>
                         <motion.p
                             variants={textVariant(0.6)}
                         >
-                            Growing up around dentistry, Arie appreciates that it is both an art and science, while being able to provide care to people. Williston was a top  choice to put down roots and practice due to the small town charm that he's use to.
+                            Growing up around dentistry, Arie appreciates that it is both an art and science, while being able to provide care to people. Williston was a top  choice to put down roots and practice due to the small town charm that he&apos;s use to.
                         </motion.p>
                         <motion.p
                             variants={textVariant(0.8)}
                             className="py-6">
-                            In his off time, he enjoys bowling, checking out new movies and following football in the fall. Arie takes pride in watching and being a part of his sons’ sporting events and extracurricular activities.
+                            In his off time, he enjoys bowling, checking out new movies and following football in the fall. Arie takes pride in watching and being a part of his sons sporting events and extracurricular activities.
                         </motion.p>
                     </div>
                 </motion.div>
