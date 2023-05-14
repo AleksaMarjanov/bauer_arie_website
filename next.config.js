@@ -15,7 +15,7 @@ const nextConfig = {
         projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
         dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
         apiVersion: process.env.NEXT_PUBLIC_API_VERSION,
-        map: process.env.REACT_APP_LEAFLET_API_KEY,
+        apiKey: process.env.REACT_APP_LEAFLET_API_KEY,
     }
 }
 

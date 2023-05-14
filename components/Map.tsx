@@ -6,9 +6,9 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 
-const apiKey = process.env.map
+const apiKey = process.env.apiKey
 
-const MapForContact = () => {
+const Map = () => {
 
 
     return (
@@ -20,7 +20,7 @@ const MapForContact = () => {
             attributionControl={false}
         >
             <TileLayer
-                url={`https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/256/{z}/{x}/{y}@2x?access_token=${apiKey}`}
+                url={`https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWxla3NhbWFyamFub3YiLCJhIjoiY2wxNzg4OWdnNGNsdTNjcnB0eTUyaTFpZyJ9.Gb0b3LdcSTevZuB-w1ipCA`}
             />
             <Marker
                 position={[48.148343, -103.62088]}
@@ -33,4 +33,4 @@ const MapForContact = () => {
     )
 }
 
-export default MapForContact
+export default Map
