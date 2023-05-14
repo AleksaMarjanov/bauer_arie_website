@@ -26,7 +26,7 @@ const Map = () => {
                 position={[48.148343, -103.62088]}
                 // @ts-ignore
                 dragabble={true} >
-                <Popup>417 1st Ave E</Popup>
+                <Popup>501 Main Street</Popup>
 
             </Marker>
         </MapContainer>

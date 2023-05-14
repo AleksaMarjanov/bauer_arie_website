@@ -16,8 +16,8 @@ const OurOffice = () => {
 
     return (
 
-        <section className='w-full px-4 mt-4 md:mt-16 flex flex-col max-lg:items-center max-lg:justify-center lg:flex-row md:gap-16 '>
-            <div className='relative max-[320px]:w-[300px] max-[320px]:h-[300px] w-[350px] h-[350px] md:w-[500px] md:h-[500px]'>
+        <section className='bg-[#dab968] w-full px-4 mt-4 md:mt-16 flex flex-col max-lg:items-center max-lg:justify-center lg:flex-row md:gap-16 '>
+            <div className='lg:ml-20 mt-2 relative max-[320px]:w-[300px] max-[320px]:h-[300px] w-[350px] h-[350px] md:w-[500px] md:h-[500px]'>
                 <Image src={office} alt="office outside" fill className="object-contain object-center" sizes='' />
             </div>
             <div className='px-8 md:mt-0 mt-6 flex items-start justify-center flex-col gap-y-4'>
@@ -61,7 +61,7 @@ const OurOffice = () => {
                 </div>
 
             </div>
-            <div className="mt-5 sm:mt-0 lg:pl-10 relative right-0 z-[0] h-[60vh] max-[425px]:h-[40vh] w-full lg:w-[30%] max-[425px]:w-[85%]  ">
+            <div className="mt-5 sm:mt-2 lg:pl-10 relative right-0 z-[0] h-[60vh] max-[425px]:h-[40vh] w-full lg:w-[30%] max-[425px]:w-[85%]  ">
                 <MapWithNOSSR />
             </div>
         </section >
