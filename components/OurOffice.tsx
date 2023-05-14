@@ -16,7 +16,7 @@ const OurOffice = () => {
 
     return (
 
-        <section className='bg-[#dab968] w-full px-4 mt-4 md:mt-16 flex flex-col max-lg:items-center max-lg:justify-center xl:flex-row md:gap-16 '>
+        <section className='bg-[#dab968] w-full px-4 mt-4 md:mt-16 flex flex-col max-xl:items-center max-xl:justify-center xl:flex-row md:gap-16 '>
             <div className='lg:ml-20 mt-2 relative max-[320px]:w-[300px] max-[320px]:h-[300px] w-[350px] h-[350px] md:w-[500px] md:h-[500px]'>
                 <Image src={office} alt="office outside" fill className="object-contain object-center" sizes='' />
             </div>
