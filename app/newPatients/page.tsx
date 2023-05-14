@@ -36,7 +36,8 @@ type Props = {
     message?: string;
 }
 
-const newPatients = () => {
+const NewPatients = () => {
+
     const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
     const [isSSR, setIsSSR] = useState<boolean>(true)
     const form = useRef<HTMLFormElement>(null)
@@ -217,7 +218,7 @@ const newPatients = () => {
                                                 <Select >
                                                     <option value={values.time}>Morning</option>
                                                     <option value={values.time}>Afternoon</option>
-                                                    <option value={values.time}>Doesn't matter</option>
+                                                    <option value={values.time}>Doesn&apos;t matter</option>
                                                 </Select>
                                             </FormControl>
 
@@ -258,4 +259,4 @@ const newPatients = () => {
     )
 }
 
-export default newPatients 
+export default NewPatients 
