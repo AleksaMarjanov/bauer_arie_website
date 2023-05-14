@@ -13,7 +13,7 @@ const Map = () => {
 
     return (
         <MapContainer
-            center={[48.148343, -103.62088]}
+            center={[48.148755, -103.62262]}
             zoom={14}
             scrollWheelZoom={false}
             style={{ height: "100%", width: "100%" }}
@@ -23,7 +23,7 @@ const Map = () => {
                 url={`https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWxla3NhbWFyamFub3YiLCJhIjoiY2wxNzg4OWdnNGNsdTNjcnB0eTUyaTFpZyJ9.Gb0b3LdcSTevZuB-w1ipCA`}
             />
             <Marker
-                position={[48.148343, -103.62088]}
+                position={[48.148755, -103.62262]}
                 // @ts-ignore
                 dragabble={true} >
                 <Popup>501 Main Street</Popup>
