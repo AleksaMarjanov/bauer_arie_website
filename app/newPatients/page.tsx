@@ -124,7 +124,8 @@ const NewPatients = () => {
                                 // variants={slideIn('up', 'tween', 1, 0.85)}
                                 className="flex flex-col items-center justify-center">
                                 <div className="my-4">
-                                    <h1 className="md:text-4xl text-2xl font-extrabold">Contact </h1>
+                                    <h1 className="md:text-4xl text-2xl font-semibold text-[#00626f]">Use the form to request an appointment.<br />
+                                        We will call you to confirm.</h1>
                                 </div>
                                 <div className="w-full">
                                     <form
@@ -223,7 +224,7 @@ const NewPatients = () => {
                                             </FormControl>
 
                                             <Button
-                                                className="hover:bg-slate-700"
+                                                className="hover:bg-[#00626f] transition-colors duration-300 ease-in-out hover:text-white"
                                                 variant="outline"
                                                 colorScheme="white"
                                                 isLoading={isLoading}
