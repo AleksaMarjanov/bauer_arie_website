@@ -21,7 +21,7 @@ const OurOffice = () => {
                 <Image src={office} alt="office outside" fill className="object-contain object-center" sizes='' />
             </div>
             <div className='px-8  mt-6 flex items-start flex-col gap-y-4'>
-                <h2 className="text-3xl text-[#00626f] mb-2 md:text-6xl ">Office</h2>
+                <h2 className="text-3xl text-[#00626f] mb-2 lg:text-6xl ">Office</h2>
                 <div className="flex relative flex-row ">
                     <a href="tel:701.577.1000">
                         <Image
