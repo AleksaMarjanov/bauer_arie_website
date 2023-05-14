@@ -15,7 +15,7 @@ const OurPractice = () => {
 
             <h1 className='mt-4 md:mt-16 text-3xl md:text-7xl font-semibold text-[#00626f]'>Meet Our Team</h1>
             <span className='text-[#00626f] font-medium text-2xl px-6 md:px-16'>
-                {/* Our people set us apart. We&apos;re passionate, dedicated, and friendly. <br />Oh yeah, and we&apos;re great at what we do! */}
+                Our people set us apart. We&apos;re passionate, dedicated, and friendly. <br />Oh yeah, and we&apos;re great at what we do!
             </span>
 
 
