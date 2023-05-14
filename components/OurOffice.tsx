@@ -61,7 +61,7 @@ const OurOffice = () => {
                 </div>
 
             </div>
-            <div className="mt-5 sm:mt-2 lg:pl-10 relative right-0 z-[0] h-[60vh] max-[425px]:h-[40vh] w-full lg:w-[30%] max-[425px]:w-[85%]  ">
+            <div className="mt-5 sm:mt-2 lg:pl-10 relative right-0 z-[0] h-[60vh] max-[425px]:h-[40vh] w-full xl:w-[30%] max-[425px]:w-[85%]  ">
                 <MapWithNOSSR />
             </div>
         </section >
