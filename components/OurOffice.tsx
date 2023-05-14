@@ -20,7 +20,7 @@ const OurOffice = () => {
             <div className='lg:ml-20 mt-2 relative max-[320px]:w-[300px] max-[320px]:h-[300px] w-[350px] h-[350px] md:w-[500px] md:h-[500px]'>
                 <Image src={office} alt="office outside" fill className="object-contain object-center" sizes='' />
             </div>
-            <div className='px-8 md:mt-0 mt-6 flex items-start justify-center flex-col gap-y-4'>
+            <div className='px-8  mt-6 flex items-start flex-col gap-y-4'>
                 <h2 className="text-3xl text-[#00626f] mb-2 md:text-6xl ">Office</h2>
                 <div className="flex relative flex-row ">
                     <a href="tel:701.577.1000">

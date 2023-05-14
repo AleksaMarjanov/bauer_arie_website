@@ -9,6 +9,9 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@chakra-ui/react": "^2.6.1",
+        "@emailjs/browser": "^3.11.0",
+        "@heroicons/react": "^2.0.18",
         "@portabletext/react": "^3.0.0",
         "@sanity/eslint-config-studio": "^2.0.1",
         "@sanity/image-url": "^1.0.2",

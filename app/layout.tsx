@@ -1,6 +1,6 @@
 // 'use client';
 
-import { Footer, Navbar } from '@/components'
+import { Footer, Navbar, OurOffice } from '@/components'
 import './globals.css'
 import { usePathname } from 'next/navigation'
 import { Montserrat } from 'next/font/google'
@@ -28,6 +28,7 @@ export default function RootLayout({ children,
             <body className={` ${montserrat.className} bg-white  overflow-x-hidden`}>
                 <Navbar />
                 {children}
+                <OurOffice />
                 <Footer />
             </body>
         </html>
