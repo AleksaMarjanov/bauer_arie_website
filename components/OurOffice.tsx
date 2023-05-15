@@ -63,7 +63,9 @@ const OurOffice = () => {
             </div>
             <div className="mt-5 mb-24 sm:mt-2 lg:pl-10 relative right-0 z-[0] h-[60vh] max-[425px]:h-[40vh] w-full xl:w-[30%] max-[425px]:w-[85%]  ">
                 <MapWithNOSSR />
-                <button className='mt-2 relative left-0 bottom-0 z-[30] bg-[#00626f] text-white px-4 py-4'>Get Directions</button>
+                <Link href='' >
+                    <button className='mt-2 relative left-0 bottom-0 z-[30] bg-[#00626f] text-white px-4 py-4'>Get Directions</button>
+                </Link>
             </div>
         </section >
     )
