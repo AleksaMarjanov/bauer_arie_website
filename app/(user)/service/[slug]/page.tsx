@@ -5,6 +5,8 @@ import { urlFor } from '@/lib/urlFor';
 import { Services } from '@/typings';
 import { PortableText } from '@portabletext/react';
 import { groq } from 'next-sanity';
+import Image from 'next/image';
+import image1 from '../../../../public/heroImage.avif';
 
 
 type Props = {
@@ -50,10 +52,14 @@ async function Service({ params: { slug } }: Props) {
                 heading={service?.headingHero}
                 src={urlFor(service?.mainImage).url()}
             />
-            <article className="min-h-screen py-36 text-center">
-                <h1 className="font-bold text-3xl md:text-6xl my-6">{service?.title}</h1>
-                <div className="p-6 lg:p-32">
-                    <PortableText value={service?.body} components={RichTextComponents} />
+            <article className="min-h-screen py-36 text-center ">
+                <div className="p-6 flex flex-col md:flex-row justify-center gap-6 md:gap-12 lg:gap-24">
+                    <div className='md:w-1/2 flex flex-col text-xl font-medium items-start justify-start'>
+                        <PortableText value={service?.body} components={RichTextComponents} />
+                    </div>
+                    <div className='relative w-[300px] h-[300px] md:w-[600px] md:h-[600px]'>
+                        <Image src={image1} alt="Hero Section Image" width={1000} height={1000} priority className='object-contain object-cover' />
+                    </div>
                 </div>
             </article>
         </>
