@@ -13,12 +13,14 @@ const LandingPageList = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="">
+            className="bg-[#cbcbcb]">
             <motion.div
                 className="mt-4 md:mt-32 mb-16 flex items-center justify-center  flex-col space-y-6 md:space-y-12">
                 <motion.p
                     variants={textVariant(0.3)}
-                    className="px-4 leading-[30px] md:px-36 flex items-center justify-center font-medium text-lg text-[#00626f]">Welcome to Williston Family Dentistry, a trusted provider of top-notch dental care for families. Our experienced team of professionals, led by Dr. Arie Bauer, is dedicated to delivering exceptional dental services that prioritize your health and satisfaction.<br />
+                    className="text-balance px-4 leading-[30px] md:px-36 flex items-center justify-center font-semibold text-xl text-[#00626f]">
+                    Welcome to Williston Family Dentistry, a trusted provider of top-notch dental care for families. Our experienced team of professionals, led by Dr. Arie Bauer, is dedicated to delivering exceptional dental services that prioritize your health and satisfaction.
+                    <br />
                 </motion.p>
                 {/**/}
                 {/* <motion.p */}
@@ -28,7 +30,7 @@ const LandingPageList = () => {
                 {/* </motion.p> */}
             </motion.div>
 
-            <div className="mt-4 lg:mt-32 w-full grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-2 items-center justify-center " >
+            <div className="mt-4 w-full grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-2 items-center justify-center " >
                 <motion.div
                     variants={fadeIn('right', 'spring', 0.4, 0.85)}
                     initial="hidden"
@@ -99,7 +101,7 @@ const LandingPageList = () => {
 
             </div >
 
-            <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
+            <div className='bg-white w-full py-12 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
                     <h2 className="font-semibold text-4xl ">Crowns</h2>
@@ -133,7 +135,7 @@ const LandingPageList = () => {
                 </div>
 
             </div >
-            <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
+            <div className='bg-[#cbcbcb] w-full py-12 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className="relative w-full h-[300px] md:h-[600px] ">
                     <Link href="/service/veneers">
@@ -167,7 +169,7 @@ const LandingPageList = () => {
                 </div>
 
             </div >
-            <div className='w-full mt-6 py-12 lg:mt-32 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
+            <div className='bg-white w-full py-12 px-6 md:px-12 lg:px-24 items-center justify-center lg:space-x-12  gap-12 grid grid-cols-1 lg:grid-cols-2'>
 
                 <div className='flex flex-col items-center justify-center gap-6  text-[#00626f] order-2 lg:order-1'>
                     <h2 className="font-semibold text-4xl">Implants</h2>

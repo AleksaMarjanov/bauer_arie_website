@@ -58,7 +58,7 @@ async function Service({ params: { slug } }: Props) {
                         <PortableText value={service?.body} components={RichTextComponents} />
                     </div>
                     <div className='relative w-[300px] h-[300px] md:w-[600px] md:h-[600px]'>
-                        <Image src={image1} alt="Hero Section Image" width={1000} height={1000} priority className='object-contain object-cover' />
+                        <Image src={image1} alt="Hero Section Image" width={1000} height={1000} priority className='object-contain object-center' />
                     </div>
                 </div>
             </article>
