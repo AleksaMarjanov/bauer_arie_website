@@ -52,9 +52,9 @@ async function Service({ params: { slug } }: Props) {
                 heading={service?.headingHero}
                 src={urlFor(service?.mainImage).url()}
             />
-            <article className="min-h-screen py-36 text-center ">
+            <article className="min-h-screen bg-[#cbcbcb]/25">
                 <div className="p-6 flex flex-col md:flex-row justify-center gap-6 md:gap-12 lg:gap-24">
-                    <div className='md:w-1/2 flex flex-col text-xl font-medium items-start justify-start'>
+                    <div className='md:w-1/2 flex flex-col text-xl font-medium '>
                         <PortableText value={service?.body} components={RichTextComponents} />
                     </div>
                     <div className='relative w-[300px] h-[300px] md:w-[600px] md:h-[600px]'>
