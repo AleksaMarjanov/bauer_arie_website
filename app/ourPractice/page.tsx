@@ -3,14 +3,14 @@
 import { HeroServices } from '@/components'
 import React from 'react'
 import { motion } from 'framer-motion'
-import office from '../../public/outsideOffice.jpg'
+import office from '@/public/outsideOffice.jpg'
 import { fadeIn, staggerContainer, textVariant } from '@/utils/motion'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const OurPractice = () => {
     return (
-        <div className="w-full flex items-center justify-center flex-col gap-y-6 ">
+        <div className="w-full flex items-center bg-white justify-center flex-col gap-y-6 ">
             <HeroServices heading="Get To Know Us" message="We are Williston Family Dentistry" src={office} />
 
             <h1 className='mt-4 md:mt-16 text-3xl md:text-7xl font-semibold text-[#00626f]'>Meet Our Team</h1>
@@ -35,22 +35,24 @@ const OurPractice = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="relative bg-gray-200 w-full h-full max-[475px]:py-24 max-[475px]:px-12">
+                    className="relative bg-[#cbcbcb] w-full h-full max-[475px]:py-24 max-[475px]:px-12">
                     <Link href="/newPatients">
 
                         {/* <div className="relative"> */}
-                        <Image
-                            src="/arieBauer1.jpg"
-                            alt="Arie Bauer Image"
-                            fill
-                            className='object-contain object-center'
-                            priority
-                            sizes="(max-width: 768px) 100vw,
+                        <div className='py-24 my-6 '>
+                            <Image
+                                src="/arieBauer1.jpg"
+                                alt="Arie Bauer Image"
+                                fill
+                                className='object-contain object-center'
+                                priority
+                                sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw,a
                                 33vw"
 
-                        />
-                        {/* </div> */}
+                            />
+                            {/* </div> */}
+                        </div>
                     </Link>
                 </motion.div>
 

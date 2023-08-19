@@ -22,11 +22,13 @@ const HeroServices = ({ src, heading, message }: HeroProps) => {
         >
             <motion.div
                 variants={zoomIn(0.05, 0.8)}
-                className="relative h-screen flex items-start justify-start bg-fixed bg-cover w-full object-cover object-center" >
-                <Image src={src} alt="hero" fill className="w-full fixed object-cover object-center" priority />
+                className="h-screen flex items-start justify-start w-full " >
+                <Image src={src} alt="hero" fill className="w-full fixed object-cover " priority />
+                {/* <Image src="/outsideOffice.jpg alt=" hero" fill className="object-cover" */}
+
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2]" />
                 <motion.div
-                    className="p-5 text-white z-[2] absolute top-[30%] md:top-[40%]">
+                    className="p-5 text-white z-[2] absolute top-[30%] left-[3%] md:top-[40%]">
 
                     <motion.div
                         variants={textVariant(0.2)}
