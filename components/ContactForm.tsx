@@ -1,7 +1,6 @@
 'use client'
 
 import { MotionValue } from 'framer-motion'
-import newPatient from '../../public/heroImage3.jpg'
 import {
     Button,
     ButtonGroup,
