@@ -62,9 +62,8 @@ const Hero = () => {
                 </div>
                 <motion.div
                     variants={fadeIn('right', 'tween', 0.1, 0.6)}
-                    className="relative z-[0] lg:order-1   max-[325px]:w-[370px] max-[325px]:h-[470px]
-                    max-[375px]:w-[420px]
-                    max-[475px]:w-[320px] w-[420px] h-[420px] lg:w-[670px] xl:w-[720px] 2xl:w-[780px]">
+                    className="relative z-[0] lg:order-1   max-[325px]:w-[370px] max-[325px]:h-[470px] max-[375px]:w-[380px] max-[425px]:w-[400px]
+                    max-[475px]:w-[420px] w-[420px] h-[420px] lg:w-[670px] xl:w-[720px] 2xl:w-[780px]">
                     <Image
                         src="/heroImag2Ver.png"
                         alt="heroImage"
