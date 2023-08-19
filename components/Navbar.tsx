@@ -102,7 +102,7 @@ const Navbar = () => {
     }, [isOpen])
 
     return (
-        <header className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed w-full items-center justify-between z-[999] flex lg:px-16 py-8 font-medium `
+        <header className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white text-black'} fixed w-full items-center justify-between z-[999] flex lg:px-16 py-8 font-medium `
         }>
             {/* <div className={`${navbar ? 'bg-white text-[#00626f] py-2 shadow-xl ' : 'bg-white'} fixed sm:px-16 w-full grid lg:grid-cols-2  items-center justify-between z-[999] `}> */}
             {/* Hamburger menu */}
