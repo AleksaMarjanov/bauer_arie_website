@@ -53,12 +53,12 @@ async function Service({ params: { slug } }: Props) {
                 src={urlFor(service?.mainImage).url()}
             />
             <article className="min-h-screen bg-[#cbcbcb]/25">
-                <div className="p-6 flex flex-col md:flex-row justify-center gap-6 md:gap-12 lg:gap-24">
+                <div className="p-6 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 lg:gap-24">
                     <div className='md:w-1/2 flex flex-col text-xl font-medium '>
                         <PortableText value={service?.body} components={RichTextComponents} />
                     </div>
-                    <div className='relative w-[300px] h-[300px] md:w-[600px] md:h-[600px]'>
-                        <Image src={image1} alt="Hero Section Image" width={1000} height={1000} priority className='object-contain object-center' />
+                    <div className='flex items-center justify-center relative w-[300px] h-[300px] md:w-[600px] md:h-[600px]'>
+                        <Image src={image1} alt="Hero Section Image" fill priority className='object-contain object-center' />
                     </div>
                 </div>
             </article>
