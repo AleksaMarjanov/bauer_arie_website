@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { fadeIn, staggerContainer, textVariant } from '@/utils/motion'
 
 const Hero = () => {
+
     return (
         <section className="w-full relative flex justify-center sm:px-16 xl:px-36 max-[475px]:min-h-[80vh] min-h-screen bg-[#aec2bc]">
             {/* <div className="wave-hero"> */}
@@ -28,7 +29,7 @@ const Hero = () => {
                 <div className="flex items-start space-y-6 md:space-y-8 justify-center px-6 md:px-12 flex-col lg:order-2">
                     <motion.div
                         variants={textVariant(0.1)}
-                        className='text-[#00626f] max-[475px]:mt-6 text-sm md:text-md md:text-xl font-semibold '
+                        className='text-[#00626f] max-[475px]:mt-36 text-sm md:text-md md:text-xl font-semibold '
                     >
                         Arie Bauer D.D.S.
                     </motion.div>
@@ -62,13 +63,14 @@ const Hero = () => {
                 </div>
                 <motion.div
                     variants={fadeIn('right', 'tween', 0.1, 0.6)}
-                    className="relative z-[0] lg:order-1   max-[325px]:w-[370px] max-[325px]:h-[470px] max-[375px]:w-[380px] max-[425px]:w-[400px]
+                    className="relative z-[0] lg:order-1 max-[325px]:w-[400px] max-[325px]:h-[470px] max-[375px]:w-[400px] max-[425px]:w-[400px]
                     max-[475px]:w-[420px] w-[420px] h-[420px] lg:w-[670px] xl:w-[720px] 2xl:w-[780px]">
                     <Image
                         src="/heroImag2Ver.png"
                         alt="heroImage"
-                        width={1000}
-                        height={1000}
+                        // width={1000}
+                        // height={1000}
+                        fill
                         className='object-contain lg:object-center rounded-bl-[360px] rounded-br-[102px] rounded-[5px]'
                         priority
                     />
